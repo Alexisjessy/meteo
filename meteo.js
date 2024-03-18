@@ -6,8 +6,9 @@ import config from './config.js';
 
 function getWeather(city) {
    
-    const apiKey = config.apiKey;
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${secrets.API_KEY}&lang=fr&units=metric`;
+    const apiKey = secrets.API_KEY;
+
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=fr&units=metric`;
 
     fetch(apiUrl)
         .then(response => response.json())
