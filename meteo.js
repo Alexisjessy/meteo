@@ -4,7 +4,7 @@
 
 function getWeather(city) {
    
-    const apiKey = secrets.API_KEY;
+    const apiKey = API_KEY;
 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=fr&units=metric`;
 
