@@ -1,4 +1,4 @@
-const apiKey = config.apiKey;
+import config from './config.js';
 
 
 
