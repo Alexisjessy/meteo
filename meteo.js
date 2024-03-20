@@ -1,4 +1,3 @@
-import config from './config.js';
 
 function getWeatherIcon(conditionCode) {
     switch (conditionCode) {
@@ -19,6 +18,7 @@ function getWeatherIcon(conditionCode) {
 }
 
 function getWeather(city) {
+   
     const apiKey = config.apiKey;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=fr&units=metric`;
 
