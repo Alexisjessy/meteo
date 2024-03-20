@@ -19,7 +19,7 @@ function getWeatherIcon(conditionCode) {
 
 function getWeather(city) {
    
-    const apiKey = config.apiKey;
+    const apiKey = '7e357635340d302c820ee5beca60af26';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=fr&units=metric`;
 
     fetch(apiUrl)
